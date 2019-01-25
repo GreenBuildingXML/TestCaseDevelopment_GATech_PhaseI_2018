@@ -1,0 +1,2830 @@
+
+Version,
+  8.9;                                    !- Version Identifier
+
+Timestep,
+  6;                                      !- Number of Timesteps per Hour
+
+LifeCycleCost:Parameters,
+  {2dbd5484-1a11-4bdb-9813-77a54989e9b0}, !- Name
+  EndOfYear,                              !- Discounting Convention
+  ConstantDollar,                         !- Inflation Approach
+  0.03,                                   !- Real Discount Rate
+  ,                                       !- Nominal Discount Rate
+  ,                                       !- Inflation
+  ,                                       !- Base Date Month
+  2011,                                   !- Base Date Year
+  ,                                       !- Service Date Month
+  2011,                                   !- Service Date Year
+  25,                                     !- Length of Study Period in Years
+  ,                                       !- Tax rate
+  None;                                   !- Depreciation Method
+
+LifeCycleCost:UsePriceEscalation,
+  U.S. Avg  Commercial-Electricity,       !- LCC Price Escalation Name
+  Electricity,                            !- Resource
+  2011,                                   !- Escalation Start Year
+  January,                                !- Escalation Start Month
+  0.9838,                                 !- Year Escalation 1
+  0.9730,                                 !- Year Escalation 2
+  0.9632,                                 !- Year Escalation 3
+  0.9611,                                 !- Year Escalation 4
+  0.9571,                                 !- Year Escalation 5
+  0.9553,                                 !- Year Escalation 6
+  0.9539,                                 !- Year Escalation 7
+  0.9521,                                 !- Year Escalation 8
+  0.9546,                                 !- Year Escalation 9
+  0.9550,                                 !- Year Escalation 10
+  0.9553,                                 !- Year Escalation 11
+  0.9564,                                 !- Year Escalation 12
+  0.9575,                                 !- Year Escalation 13
+  0.9596,                                 !- Year Escalation 14
+  0.9618,                                 !- Year Escalation 15
+  0.9614,                                 !- Year Escalation 16
+  0.9618,                                 !- Year Escalation 17
+  0.9618,                                 !- Year Escalation 18
+  0.9593,                                 !- Year Escalation 19
+  0.9589,                                 !- Year Escalation 20
+  0.9607,                                 !- Year Escalation 21
+  0.9625,                                 !- Year Escalation 22
+  0.9650,                                 !- Year Escalation 23
+  0.9708,                                 !- Year Escalation 24
+  0.9751,                                 !- Year Escalation 25
+  0.9762,                                 !- Year Escalation 26
+  0.9766,                                 !- Year Escalation 27
+  0.9766,                                 !- Year Escalation 28
+  0.9769,                                 !- Year Escalation 29
+  0.9773;                                 !- Year Escalation 30
+
+LifeCycleCost:UsePriceEscalation,
+  U.S. Avg  Commercial-Distillate Oil,    !- LCC Price Escalation Name
+  FuelOil#1,                              !- Resource
+  2011,                                   !- Escalation Start Year
+  January,                                !- Escalation Start Month
+  0.9714,                                 !- Year Escalation 1
+  0.9730,                                 !- Year Escalation 2
+  0.9942,                                 !- Year Escalation 3
+  1.0164,                                 !- Year Escalation 4
+  1.0541,                                 !- Year Escalation 5
+  1.0928,                                 !- Year Escalation 6
+  1.1267,                                 !- Year Escalation 7
+  1.1580,                                 !- Year Escalation 8
+  1.1792,                                 !- Year Escalation 9
+  1.1967,                                 !- Year Escalation 10
+  1.2200,                                 !- Year Escalation 11
+  1.2333,                                 !- Year Escalation 12
+  1.2566,                                 !- Year Escalation 13
+  1.2709,                                 !- Year Escalation 14
+  1.2826,                                 !- Year Escalation 15
+  1.2985,                                 !- Year Escalation 16
+  1.3102,                                 !- Year Escalation 17
+  1.3250,                                 !- Year Escalation 18
+  1.3261,                                 !- Year Escalation 19
+  1.3282,                                 !- Year Escalation 20
+  1.3324,                                 !- Year Escalation 21
+  1.3356,                                 !- Year Escalation 22
+  1.3431,                                 !- Year Escalation 23
+  1.3510,                                 !- Year Escalation 24
+  1.3568,                                 !- Year Escalation 25
+  1.3606,                                 !- Year Escalation 26
+  1.3637,                                 !- Year Escalation 27
+  1.3674,                                 !- Year Escalation 28
+  1.3706,                                 !- Year Escalation 29
+  1.3743;                                 !- Year Escalation 30
+
+LifeCycleCost:UsePriceEscalation,
+  U.S. Avg  Commercial-Residual Oil,      !- LCC Price Escalation Name
+  FuelOil#2,                              !- Resource
+  2011,                                   !- Escalation Start Year
+  January,                                !- Escalation Start Month
+  0.8469,                                 !- Year Escalation 1
+  0.8257,                                 !- Year Escalation 2
+  0.8681,                                 !- Year Escalation 3
+  0.8988,                                 !- Year Escalation 4
+  0.9289,                                 !- Year Escalation 5
+  0.9604,                                 !- Year Escalation 6
+  0.9897,                                 !- Year Escalation 7
+  1.0075,                                 !- Year Escalation 8
+  1.0314,                                 !- Year Escalation 9
+  1.0554,                                 !- Year Escalation 10
+  1.0861,                                 !- Year Escalation 11
+  1.1278,                                 !- Year Escalation 12
+  1.1497,                                 !- Year Escalation 13
+  1.1620,                                 !- Year Escalation 14
+  1.1743,                                 !- Year Escalation 15
+  1.1852,                                 !- Year Escalation 16
+  1.1948,                                 !- Year Escalation 17
+  1.2037,                                 !- Year Escalation 18
+  1.2071,                                 !- Year Escalation 19
+  1.2119,                                 !- Year Escalation 20
+  1.2139,                                 !- Year Escalation 21
+  1.2194,                                 !- Year Escalation 22
+  1.2276,                                 !- Year Escalation 23
+  1.2365,                                 !- Year Escalation 24
+  1.2420,                                 !- Year Escalation 25
+  1.2461,                                 !- Year Escalation 26
+  1.2509,                                 !- Year Escalation 27
+  1.2550,                                 !- Year Escalation 28
+  1.2591,                                 !- Year Escalation 29
+  1.2638;                                 !- Year Escalation 30
+
+LifeCycleCost:UsePriceEscalation,
+  U.S. Avg  Commercial-Natural gas,       !- LCC Price Escalation Name
+  NaturalGas,                             !- Resource
+  2011,                                   !- Escalation Start Year
+  January,                                !- Escalation Start Month
+  0.9823,                                 !- Year Escalation 1
+  0.9557,                                 !- Year Escalation 2
+  0.9279,                                 !- Year Escalation 3
+  0.9257,                                 !- Year Escalation 4
+  0.9346,                                 !- Year Escalation 5
+  0.9412,                                 !- Year Escalation 6
+  0.9512,                                 !- Year Escalation 7
+  0.9645,                                 !- Year Escalation 8
+  0.9856,                                 !- Year Escalation 9
+  1.0067,                                 !- Year Escalation 10
+  1.0222,                                 !- Year Escalation 11
+  1.0410,                                 !- Year Escalation 12
+  1.0610,                                 !- Year Escalation 13
+  1.0787,                                 !- Year Escalation 14
+  1.0942,                                 !- Year Escalation 15
+  1.1098,                                 !- Year Escalation 16
+  1.1220,                                 !- Year Escalation 17
+  1.1308,                                 !- Year Escalation 18
+  1.1386,                                 !- Year Escalation 19
+  1.1486,                                 !- Year Escalation 20
+  1.1619,                                 !- Year Escalation 21
+  1.1763,                                 !- Year Escalation 22
+  1.1918,                                 !- Year Escalation 23
+  1.2118,                                 !- Year Escalation 24
+  1.2284,                                 !- Year Escalation 25
+  1.2439,                                 !- Year Escalation 26
+  1.2605,                                 !- Year Escalation 27
+  1.2772,                                 !- Year Escalation 28
+  1.2938,                                 !- Year Escalation 29
+  1.3115;                                 !- Year Escalation 30
+
+LifeCycleCost:UsePriceEscalation,
+  U.S. Avg  Commercial-Coal,              !- LCC Price Escalation Name
+  Coal,                                   !- Resource
+  2011,                                   !- Escalation Start Year
+  January,                                !- Escalation Start Month
+  0.9970,                                 !- Year Escalation 1
+  1.0089,                                 !- Year Escalation 2
+  1.0089,                                 !- Year Escalation 3
+  0.9941,                                 !- Year Escalation 4
+  0.9941,                                 !- Year Escalation 5
+  1.0000,                                 !- Year Escalation 6
+  1.0030,                                 !- Year Escalation 7
+  1.0059,                                 !- Year Escalation 8
+  1.0089,                                 !- Year Escalation 9
+  1.0119,                                 !- Year Escalation 10
+  1.0148,                                 !- Year Escalation 11
+  1.0178,                                 !- Year Escalation 12
+  1.0208,                                 !- Year Escalation 13
+  1.0267,                                 !- Year Escalation 14
+  1.0297,                                 !- Year Escalation 15
+  1.0356,                                 !- Year Escalation 16
+  1.0415,                                 !- Year Escalation 17
+  1.0534,                                 !- Year Escalation 18
+  1.0564,                                 !- Year Escalation 19
+  1.0593,                                 !- Year Escalation 20
+  1.0653,                                 !- Year Escalation 21
+  1.0712,                                 !- Year Escalation 22
+  1.0742,                                 !- Year Escalation 23
+  1.0801,                                 !- Year Escalation 24
+  1.0831,                                 !- Year Escalation 25
+  1.0831,                                 !- Year Escalation 26
+  1.0861,                                 !- Year Escalation 27
+  1.0890,                                 !- Year Escalation 28
+  1.0920,                                 !- Year Escalation 29
+  1.0950;                                 !- Year Escalation 30
+
+Building,
+  Project Name,                           !- Name
+  ,                                       !- North Axis {deg}
+  ,                                       !- Terrain
+  ,                                       !- Loads Convergence Tolerance Value
+  ,                                       !- Temperature Convergence Tolerance Value {deltaC}
+  ,                                       !- Solar Distribution
+  ,                                       !- Maximum Number of Warmup Days
+  ;                                       !- Minimum Number of Warmup Days
+
+Shading:Building:Detailed,
+  aim2792,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  -16.42426, 1.304794, 8.808754,          !- X,Y,Z Vertex 1 {m}
+  -16.42426, -8.245606, 3.293647,         !- X,Y,Z Vertex 2 {m}
+  -14.90519, -7.21313, 3.889875;          !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim2799,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  -14.90519, -7.21313, 3.889875,          !- X,Y,Z Vertex 1 {m}
+  -16.42426, -8.245606, 3.293647,         !- X,Y,Z Vertex 2 {m}
+  14.86854, -8.245606, 3.293647,          !- X,Y,Z Vertex 3 {m}
+  13.34947, -7.21313, 3.889875;           !- X,Y,Z Vertex 4 {m}
+
+Shading:Building:Detailed,
+  aim2807,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  -16.42426, 1.304794, 8.808754,          !- X,Y,Z Vertex 1 {m}
+  -14.90519, -7.21313, 3.889875,          !- X,Y,Z Vertex 2 {m}
+  -14.90519, 1.304794, 8.808754;          !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim2814,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  14.86854, 1.304794, 8.808754,           !- X,Y,Z Vertex 1 {m}
+  13.34947, -7.21313, 3.889875,           !- X,Y,Z Vertex 2 {m}
+  14.86854, -8.245606, 3.293647;          !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim2821,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  13.34947, 1.304794, 8.808754,           !- X,Y,Z Vertex 1 {m}
+  13.34947, -7.21313, 3.889875,           !- X,Y,Z Vertex 2 {m}
+  14.86854, 1.304794, 8.808754;           !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim2976,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  14.86854, 1.304794, 8.808754,           !- X,Y,Z Vertex 1 {m}
+  14.86854, 10.85519, 3.293647,           !- X,Y,Z Vertex 2 {m}
+  13.34947, 9.822719, 3.889875;           !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim2983,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  13.34947, 9.822719, 3.889875,           !- X,Y,Z Vertex 1 {m}
+  14.86854, 10.85519, 3.293647,           !- X,Y,Z Vertex 2 {m}
+  -16.42426, 10.85519, 3.293647,          !- X,Y,Z Vertex 3 {m}
+  -14.90519, 9.822719, 3.889875;          !- X,Y,Z Vertex 4 {m}
+
+Shading:Building:Detailed,
+  aim2991,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  14.86854, 1.304794, 8.808754,           !- X,Y,Z Vertex 1 {m}
+  13.34947, 9.822719, 3.889875,           !- X,Y,Z Vertex 2 {m}
+  13.34947, 1.304794, 8.808754;           !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim2998,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  -16.42426, 1.304794, 8.808754,          !- X,Y,Z Vertex 1 {m}
+  -14.90519, 9.822719, 3.889875,          !- X,Y,Z Vertex 2 {m}
+  -16.42426, 10.85519, 3.293647;          !- X,Y,Z Vertex 3 {m}
+
+Shading:Building:Detailed,
+  aim3005,                                !- Name
+  ,                                       !- Transmittance Schedule Name
+  ,                                       !- Number of Vertices
+  -14.90519, 1.304794, 8.808754,          !- X,Y,Z Vertex 1 {m}
+  -14.90519, 9.822719, 3.889875,          !- X,Y,Z Vertex 2 {m}
+  -16.42426, 1.304794, 8.808754;          !- X,Y,Z Vertex 3 {m}
+
+Zone,
+  Zone Corridor Zone,                     !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim0902,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 1.304794, 8.808754,           !- X,Y,Z Vertex 1 {m}
+  12.93814, -0.2192058, 7.928684,         !- X,Y,Z Vertex 2 {m}
+  12.93814, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  12.93814, 2.828794, 0,                  !- X,Y,Z Vertex 4 {m}
+  12.93814, 2.828794, 7.928684;           !- X,Y,Z Vertex 5 {m}
+
+BuildingSurface:Detailed,
+  aim1646,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, 1.304794, 8.808754,          !- X,Y,Z Vertex 1 {m}
+  -14.49386, 2.828794, 7.928684,          !- X,Y,Z Vertex 2 {m}
+  -14.49386, 2.828794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -14.49386, 1.787394, 0,                 !- X,Y,Z Vertex 4 {m}
+  -14.49386, 1.787394, 2.0574,            !- X,Y,Z Vertex 5 {m}
+  -14.49386, 0.8221942, 2.0574,           !- X,Y,Z Vertex 6 {m}
+  -14.49386, 0.8221942, 0,                !- X,Y,Z Vertex 7 {m}
+  -14.49386, -0.2192058, 0,               !- X,Y,Z Vertex 8 {m}
+  -14.49386, -0.2192058, 7.928684;        !- X,Y,Z Vertex 9 {m}
+
+BuildingSurface:Detailed,
+  aim1674,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, 1.787394, 2.0574,            !- X,Y,Z Vertex 1 {m}
+  -14.49386, 1.787394, 0,                 !- X,Y,Z Vertex 2 {m}
+  -14.49386, 0.8221942, 0,                !- X,Y,Z Vertex 3 {m}
+  -14.49386, 0.8221942, 2.0574;           !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim1697,                                !- Name
+  GlassDoor,                              !- Surface Type
+  ,                                       !- Construction Name
+  aim1674,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -14.49386, 1.787394, 2.0574,            !- X,Y,Z Vertex 1 {m}
+  -14.49386, 1.787394, 0,                 !- X,Y,Z Vertex 2 {m}
+  -14.49386, 0.8221942, 0,                !- X,Y,Z Vertex 3 {m}
+  -14.49386, 0.8221942, 2.0574;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1816,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 2.828794, 0,                  !- X,Y,Z Vertex 1 {m}
+  12.93814, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -14.49386, -0.2192058, 0,               !- X,Y,Z Vertex 3 {m}
+  -14.49386, 2.828794, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2046,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2046 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  12.93814, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  8.823339, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  8.823339, 2.828794, 2.1336,             !- X,Y,Z Vertex 4 {m}
+  7.90894, 2.828794, 2.1336,              !- X,Y,Z Vertex 5 {m}
+  7.90894, 2.828794, 0,                   !- X,Y,Z Vertex 6 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 7 {m}
+  3.79414, 2.828794, 7.928684;            !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2074,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2074 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  8.823339, 2.828794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  8.823339, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  7.90894, 2.828794, 0,                   !- X,Y,Z Vertex 3 {m}
+  7.90894, 2.828794, 2.1336;              !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2097,                                !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2074,                                !- Building Surface Name
+  aim2097 Reversed,                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  8.823339, 2.828794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  8.823339, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  7.90894, 2.828794, 0,                   !- X,Y,Z Vertex 3 {m}
+  7.90894, 2.828794, 2.1336;              !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2151,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2151 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 2.828794, 7.928684,            !- X,Y,Z Vertex 1 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 2 {m}
+  -0.3206601, 2.828794, 0,                !- X,Y,Z Vertex 3 {m}
+  -0.3206601, 2.828794, 2.1336,           !- X,Y,Z Vertex 4 {m}
+  -1.23506, 2.828794, 2.1336,             !- X,Y,Z Vertex 5 {m}
+  -1.23506, 2.828794, 0,                  !- X,Y,Z Vertex 6 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 7 {m}
+  -5.34986, 2.828794, 7.928684;           !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2179,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2179 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -0.3206601, 2.828794, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -0.3206601, 2.828794, 0,                !- X,Y,Z Vertex 2 {m}
+  -1.23506, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -1.23506, 2.828794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2202,                                !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2179,                                !- Building Surface Name
+  aim2202 Reversed,                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -0.3206601, 2.828794, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -0.3206601, 2.828794, 0,                !- X,Y,Z Vertex 2 {m}
+  -1.23506, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -1.23506, 2.828794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2256,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2256 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -9.46466, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -9.46466, 2.828794, 2.1336,             !- X,Y,Z Vertex 4 {m}
+  -10.37906, 2.828794, 2.1336,            !- X,Y,Z Vertex 5 {m}
+  -10.37906, 2.828794, 0,                 !- X,Y,Z Vertex 6 {m}
+  -14.49386, 2.828794, 0,                 !- X,Y,Z Vertex 7 {m}
+  -14.49386, 2.828794, 7.928684;          !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2284,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2284 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -9.46466, 2.828794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  -9.46466, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -10.37906, 2.828794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -10.37906, 2.828794, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2307,                                !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2284,                                !- Building Surface Name
+  aim2307 Reversed,                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -9.46466, 2.828794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  -9.46466, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -10.37906, 2.828794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -10.37906, 2.828794, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2361,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2361 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, -0.2192058, 7.928684,        !- X,Y,Z Vertex 1 {m}
+  -14.49386, -0.2192058, 0,               !- X,Y,Z Vertex 2 {m}
+  -10.37906, -0.2192058, 0,               !- X,Y,Z Vertex 3 {m}
+  -10.37906, -0.2192058, 2.1336,          !- X,Y,Z Vertex 4 {m}
+  -9.46466, -0.2192058, 2.1336,           !- X,Y,Z Vertex 5 {m}
+  -9.46466, -0.2192058, 0,                !- X,Y,Z Vertex 6 {m}
+  -5.34986, -0.2192058, 0,                !- X,Y,Z Vertex 7 {m}
+  -5.34986, -0.2192058, 7.928684;         !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2389,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2389 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -10.37906, -0.2192058, 2.1336,          !- X,Y,Z Vertex 1 {m}
+  -10.37906, -0.2192058, 0,               !- X,Y,Z Vertex 2 {m}
+  -9.46466, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  -9.46466, -0.2192058, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2412,                                !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2389,                                !- Building Surface Name
+  aim2412 Reversed,                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -10.37906, -0.2192058, 2.1336,          !- X,Y,Z Vertex 1 {m}
+  -10.37906, -0.2192058, 0,               !- X,Y,Z Vertex 2 {m}
+  -9.46466, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  -9.46466, -0.2192058, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2466,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2466 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  -5.34986, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -1.23506, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  -1.23506, -0.2192058, 2.1336,           !- X,Y,Z Vertex 4 {m}
+  -0.3206601, -0.2192058, 2.1336,         !- X,Y,Z Vertex 5 {m}
+  -0.3206601, -0.2192058, 0,              !- X,Y,Z Vertex 6 {m}
+  3.79414, -0.2192058, 0,                 !- X,Y,Z Vertex 7 {m}
+  3.79414, -0.2192058, 7.928684;          !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2494,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2494 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -1.23506, -0.2192058, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -1.23506, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -0.2192058, 0,              !- X,Y,Z Vertex 3 {m}
+  -0.3206601, -0.2192058, 2.1336;         !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2517,                                !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2494,                                !- Building Surface Name
+  aim2517 Reversed,                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -1.23506, -0.2192058, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -1.23506, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -0.2192058, 0,              !- X,Y,Z Vertex 3 {m}
+  -0.3206601, -0.2192058, 2.1336;         !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2571,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2571 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -0.2192058, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  3.79414, -0.2192058, 0,                 !- X,Y,Z Vertex 2 {m}
+  7.90894, -0.2192058, 0,                 !- X,Y,Z Vertex 3 {m}
+  7.90894, -0.2192058, 2.1336,            !- X,Y,Z Vertex 4 {m}
+  8.823339, -0.2192058, 2.1336,           !- X,Y,Z Vertex 5 {m}
+  8.823339, -0.2192058, 0,                !- X,Y,Z Vertex 6 {m}
+  12.93814, -0.2192058, 0,                !- X,Y,Z Vertex 7 {m}
+  12.93814, -0.2192058, 7.928684;         !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2599,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2599 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  7.90894, -0.2192058, 2.1336,            !- X,Y,Z Vertex 1 {m}
+  7.90894, -0.2192058, 0,                 !- X,Y,Z Vertex 2 {m}
+  8.823339, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  8.823339, -0.2192058, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2622,                                !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2599,                                !- Building Surface Name
+  aim2622 Reversed,                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  7.90894, -0.2192058, 2.1336,            !- X,Y,Z Vertex 1 {m}
+  7.90894, -0.2192058, 0,                 !- X,Y,Z Vertex 2 {m}
+  8.823339, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  8.823339, -0.2192058, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2967,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, 1.304794, 8.808754,          !- X,Y,Z Vertex 1 {m}
+  -14.49386, -0.2192058, 7.928684,        !- X,Y,Z Vertex 2 {m}
+  12.93814, -0.2192058, 7.928684,         !- X,Y,Z Vertex 3 {m}
+  12.93814, 1.304794, 8.808754;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim3040,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone Corridor Zone,                     !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 1.304794, 8.808754,           !- X,Y,Z Vertex 1 {m}
+  12.93814, 2.828794, 7.928684,           !- X,Y,Z Vertex 2 {m}
+  -14.49386, 2.828794, 7.928684,          !- X,Y,Z Vertex 3 {m}
+  -14.49386, 1.304794, 8.808754;          !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Zone N Zone,                            !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim0465,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 8.924794, 4.408402,            !- X,Y,Z Vertex 1 {m}
+  3.79414, 8.924794, 0,                   !- X,Y,Z Vertex 2 {m}
+  -0.3206601, 8.924794, 0.9144,           !- X,Y,Z Vertex 3 {m}
+  -0.3206601, 8.924794, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0488,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -0.3206601, 8.924794, 0.9144,           !- X,Y,Z Vertex 1 {m}
+  3.79414, 8.924794, 0,                   !- X,Y,Z Vertex 2 {m}
+  -5.34986, 8.924794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -1.23506, 8.924794, 0.9144;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0511,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 8.924794, 4.408402,            !- X,Y,Z Vertex 1 {m}
+  -0.3206601, 8.924794, 2.1336,           !- X,Y,Z Vertex 2 {m}
+  -1.23506, 8.924794, 2.1336,             !- X,Y,Z Vertex 3 {m}
+  -5.34986, 8.924794, 4.408402;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0534,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 8.924794, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  -1.23506, 8.924794, 2.1336,             !- X,Y,Z Vertex 2 {m}
+  -1.23506, 8.924794, 0.9144,             !- X,Y,Z Vertex 3 {m}
+  -5.34986, 8.924794, 0;                  !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0557,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -0.3206601, 8.924794, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -0.3206601, 8.924794, 0.9144,           !- X,Y,Z Vertex 2 {m}
+  -1.23506, 8.924794, 0.9144,             !- X,Y,Z Vertex 3 {m}
+  -1.23506, 8.924794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim0580,                                !- Name
+  Window,                                 !- Surface Type
+  1/8 in Pilkington single glazing,       !- Construction Name
+  aim0557,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -0.3206601, 8.924794, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -0.3206601, 8.924794, 0.9144,           !- X,Y,Z Vertex 2 {m}
+  -1.23506, 8.924794, 0.9144,             !- X,Y,Z Vertex 3 {m}
+  -1.23506, 8.924794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1927,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 8.924794, 0,                   !- X,Y,Z Vertex 1 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 2 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -5.34986, 8.924794, 0;                  !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2151 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2151,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -1.23506, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -1.23506, 2.828794, 2.1336,             !- X,Y,Z Vertex 4 {m}
+  -0.3206601, 2.828794, 2.1336,           !- X,Y,Z Vertex 5 {m}
+  -0.3206601, 2.828794, 0,                !- X,Y,Z Vertex 6 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 7 {m}
+  3.79414, 2.828794, 7.928684;            !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2179 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2179,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -1.23506, 2.828794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  -1.23506, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -0.3206601, 2.828794, 0,                !- X,Y,Z Vertex 3 {m}
+  -0.3206601, 2.828794, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2202 Reversed,                       !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2179 Reversed,                       !- Building Surface Name
+  aim2202,                                !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -1.23506, 2.828794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  -1.23506, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -0.3206601, 2.828794, 0,                !- X,Y,Z Vertex 3 {m}
+  -0.3206601, 2.828794, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2668 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2668,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  -5.34986, 8.924794, 4.408402,           !- X,Y,Z Vertex 2 {m}
+  -5.34986, 8.924794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -5.34986, 2.828794, 0;                  !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2706,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2706 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 2.828794, 7.928684,            !- X,Y,Z Vertex 1 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 2 {m}
+  3.79414, 8.924794, 0,                   !- X,Y,Z Vertex 3 {m}
+  3.79414, 8.924794, 4.408402;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim3114,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone N Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 2.828794, 7.928684,            !- X,Y,Z Vertex 1 {m}
+  3.79414, 8.924794, 4.408402,            !- X,Y,Z Vertex 2 {m}
+  -5.34986, 8.924794, 4.408402,           !- X,Y,Z Vertex 3 {m}
+  -5.34986, 2.828794, 7.928684;           !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Zone NE Zone,                           !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim0243,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 8.924794, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  12.93814, 8.924794, 0,                  !- X,Y,Z Vertex 2 {m}
+  8.823339, 8.924794, 0.9144,             !- X,Y,Z Vertex 3 {m}
+  8.823339, 8.924794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0266,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  8.823339, 8.924794, 0.9144,             !- X,Y,Z Vertex 1 {m}
+  12.93814, 8.924794, 0,                  !- X,Y,Z Vertex 2 {m}
+  3.79414, 8.924794, 0,                   !- X,Y,Z Vertex 3 {m}
+  7.90894, 8.924794, 0.9144;              !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0289,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 8.924794, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  8.823339, 8.924794, 2.1336,             !- X,Y,Z Vertex 2 {m}
+  7.90894, 8.924794, 2.1336,              !- X,Y,Z Vertex 3 {m}
+  3.79414, 8.924794, 4.408402;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0312,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 8.924794, 4.408402,            !- X,Y,Z Vertex 1 {m}
+  7.90894, 8.924794, 2.1336,              !- X,Y,Z Vertex 2 {m}
+  7.90894, 8.924794, 0.9144,              !- X,Y,Z Vertex 3 {m}
+  3.79414, 8.924794, 0;                   !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0335,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  8.823339, 8.924794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  8.823339, 8.924794, 0.9144,             !- X,Y,Z Vertex 2 {m}
+  7.90894, 8.924794, 0.9144,              !- X,Y,Z Vertex 3 {m}
+  7.90894, 8.924794, 2.1336;              !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim0358,                                !- Name
+  Window,                                 !- Surface Type
+  1/8 in Pilkington single glazing,       !- Construction Name
+  aim0335,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  8.823339, 8.924794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  8.823339, 8.924794, 0.9144,             !- X,Y,Z Vertex 2 {m}
+  7.90894, 8.924794, 0.9144,              !- X,Y,Z Vertex 3 {m}
+  7.90894, 8.924794, 2.1336;              !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0940,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  12.93814, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  12.93814, 8.924794, 0,                  !- X,Y,Z Vertex 3 {m}
+  12.93814, 8.924794, 4.408402;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1853,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 8.924794, 0,                  !- X,Y,Z Vertex 1 {m}
+  12.93814, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 3 {m}
+  3.79414, 8.924794, 0;                   !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2046 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2046,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 2.828794, 7.928684,            !- X,Y,Z Vertex 1 {m}
+  3.79414, 2.828794, 0,                   !- X,Y,Z Vertex 2 {m}
+  7.90894, 2.828794, 0,                   !- X,Y,Z Vertex 3 {m}
+  7.90894, 2.828794, 2.1336,              !- X,Y,Z Vertex 4 {m}
+  8.823339, 2.828794, 2.1336,             !- X,Y,Z Vertex 5 {m}
+  8.823339, 2.828794, 0,                  !- X,Y,Z Vertex 6 {m}
+  12.93814, 2.828794, 0,                  !- X,Y,Z Vertex 7 {m}
+  12.93814, 2.828794, 7.928684;           !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2074 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2074,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  7.90894, 2.828794, 2.1336,              !- X,Y,Z Vertex 1 {m}
+  7.90894, 2.828794, 0,                   !- X,Y,Z Vertex 2 {m}
+  8.823339, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  8.823339, 2.828794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2097 Reversed,                       !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2074 Reversed,                       !- Building Surface Name
+  aim2097,                                !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  7.90894, 2.828794, 2.1336,              !- X,Y,Z Vertex 1 {m}
+  7.90894, 2.828794, 0,                   !- X,Y,Z Vertex 2 {m}
+  8.823339, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  8.823339, 2.828794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2706 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2706,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, 2.828794, 7.928684,            !- X,Y,Z Vertex 1 {m}
+  3.79414, 8.924794, 4.408402,            !- X,Y,Z Vertex 2 {m}
+  3.79414, 8.924794, 0,                   !- X,Y,Z Vertex 3 {m}
+  3.79414, 2.828794, 0;                   !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim3077,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone NE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  12.93814, 8.924794, 4.408402,           !- X,Y,Z Vertex 2 {m}
+  3.79414, 8.924794, 4.408402,            !- X,Y,Z Vertex 3 {m}
+  3.79414, 2.828794, 7.928684;            !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Zone NW Zone,                           !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim0687,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 8.924794, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  -5.34986, 8.924794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -9.46466, 8.924794, 0.9144,             !- X,Y,Z Vertex 3 {m}
+  -9.46466, 8.924794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0710,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -9.46466, 8.924794, 0.9144,             !- X,Y,Z Vertex 1 {m}
+  -5.34986, 8.924794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -14.49386, 8.924794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -10.37906, 8.924794, 0.9144;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0733,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 8.924794, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  -9.46466, 8.924794, 2.1336,             !- X,Y,Z Vertex 2 {m}
+  -10.37906, 8.924794, 2.1336,            !- X,Y,Z Vertex 3 {m}
+  -14.49386, 8.924794, 4.408402;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0756,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, 8.924794, 4.408402,          !- X,Y,Z Vertex 1 {m}
+  -10.37906, 8.924794, 2.1336,            !- X,Y,Z Vertex 2 {m}
+  -10.37906, 8.924794, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -14.49386, 8.924794, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim0779,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -9.46466, 8.924794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  -9.46466, 8.924794, 0.9144,             !- X,Y,Z Vertex 2 {m}
+  -10.37906, 8.924794, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -10.37906, 8.924794, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim0802,                                !- Name
+  Window,                                 !- Surface Type
+  1/8 in Pilkington single glazing,       !- Construction Name
+  aim0779,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -9.46466, 8.924794, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  -9.46466, 8.924794, 0.9144,             !- X,Y,Z Vertex 2 {m}
+  -10.37906, 8.924794, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -10.37906, 8.924794, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1599,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, 2.828794, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  -14.49386, 8.924794, 4.408402,          !- X,Y,Z Vertex 2 {m}
+  -14.49386, 8.924794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -14.49386, 2.828794, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2001,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 8.924794, 0,                  !- X,Y,Z Vertex 1 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -14.49386, 2.828794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -14.49386, 8.924794, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2256 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2256,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, 2.828794, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  -14.49386, 2.828794, 0,                 !- X,Y,Z Vertex 2 {m}
+  -10.37906, 2.828794, 0,                 !- X,Y,Z Vertex 3 {m}
+  -10.37906, 2.828794, 2.1336,            !- X,Y,Z Vertex 4 {m}
+  -9.46466, 2.828794, 2.1336,             !- X,Y,Z Vertex 5 {m}
+  -9.46466, 2.828794, 0,                  !- X,Y,Z Vertex 6 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 7 {m}
+  -5.34986, 2.828794, 7.928684;           !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2284 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2284,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -10.37906, 2.828794, 2.1336,            !- X,Y,Z Vertex 1 {m}
+  -10.37906, 2.828794, 0,                 !- X,Y,Z Vertex 2 {m}
+  -9.46466, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -9.46466, 2.828794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2307 Reversed,                       !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2284 Reversed,                       !- Building Surface Name
+  aim2307,                                !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -10.37906, 2.828794, 2.1336,            !- X,Y,Z Vertex 1 {m}
+  -10.37906, 2.828794, 0,                 !- X,Y,Z Vertex 2 {m}
+  -9.46466, 2.828794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -9.46466, 2.828794, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2668,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2668 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  -5.34986, 2.828794, 0,                  !- X,Y,Z Vertex 2 {m}
+  -5.34986, 8.924794, 0,                  !- X,Y,Z Vertex 3 {m}
+  -5.34986, 8.924794, 4.408402;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim3151,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone NW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, 2.828794, 7.928684,           !- X,Y,Z Vertex 1 {m}
+  -5.34986, 8.924794, 4.408402,           !- X,Y,Z Vertex 2 {m}
+  -14.49386, 8.924794, 4.408402,          !- X,Y,Z Vertex 3 {m}
+  -14.49386, 2.828794, 7.928684;          !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Zone S Zone,                            !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim1237,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -6.315206, 4.408402,          !- X,Y,Z Vertex 1 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 2 {m}
+  -1.23506, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -1.23506, -6.315206, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1260,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -1.23506, -6.315206, 0.9144,            !- X,Y,Z Vertex 1 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 2 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 3 {m}
+  -0.3206601, -6.315206, 0.9144;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1283,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -6.315206, 4.408402,          !- X,Y,Z Vertex 1 {m}
+  -1.23506, -6.315206, 2.1336,            !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -6.315206, 2.1336,          !- X,Y,Z Vertex 3 {m}
+  3.79414, -6.315206, 4.408402;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1306,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -6.315206, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  -0.3206601, -6.315206, 2.1336,          !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -6.315206, 0.9144,          !- X,Y,Z Vertex 3 {m}
+  3.79414, -6.315206, 0;                  !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1329,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -1.23506, -6.315206, 2.1336,            !- X,Y,Z Vertex 1 {m}
+  -1.23506, -6.315206, 0.9144,            !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -6.315206, 0.9144,          !- X,Y,Z Vertex 3 {m}
+  -0.3206601, -6.315206, 2.1336;          !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim1352,                                !- Name
+  Window,                                 !- Surface Type
+  1/8 in Pilkington single glazing,       !- Construction Name
+  aim1329,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -1.23506, -6.315206, 2.1336,            !- X,Y,Z Vertex 1 {m}
+  -1.23506, -6.315206, 0.9144,            !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -6.315206, 0.9144,          !- X,Y,Z Vertex 3 {m}
+  -0.3206601, -6.315206, 2.1336;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1890,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -0.2192058, 0,                 !- X,Y,Z Vertex 1 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 2 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 3 {m}
+  -5.34986, -0.2192058, 0;                !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2466 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2466,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -0.2192058, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  3.79414, -0.2192058, 0,                 !- X,Y,Z Vertex 2 {m}
+  -0.3206601, -0.2192058, 0,              !- X,Y,Z Vertex 3 {m}
+  -0.3206601, -0.2192058, 2.1336,         !- X,Y,Z Vertex 4 {m}
+  -1.23506, -0.2192058, 2.1336,           !- X,Y,Z Vertex 5 {m}
+  -1.23506, -0.2192058, 0,                !- X,Y,Z Vertex 6 {m}
+  -5.34986, -0.2192058, 0,                !- X,Y,Z Vertex 7 {m}
+  -5.34986, -0.2192058, 7.928684;         !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2494 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2494,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -0.3206601, -0.2192058, 2.1336,         !- X,Y,Z Vertex 1 {m}
+  -0.3206601, -0.2192058, 0,              !- X,Y,Z Vertex 2 {m}
+  -1.23506, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  -1.23506, -0.2192058, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2517 Reversed,                       !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2494 Reversed,                       !- Building Surface Name
+  aim2517,                                !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -0.3206601, -0.2192058, 2.1336,         !- X,Y,Z Vertex 1 {m}
+  -0.3206601, -0.2192058, 0,              !- X,Y,Z Vertex 2 {m}
+  -1.23506, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  -1.23506, -0.2192058, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2744 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2744,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  -5.34986, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 3 {m}
+  -5.34986, -6.315206, 4.408402;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2782,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2782 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -0.2192058, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  3.79414, -6.315206, 4.408402,           !- X,Y,Z Vertex 2 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 3 {m}
+  3.79414, -0.2192058, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2893,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone S Zone,                            !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  -5.34986, -6.315206, 4.408402,          !- X,Y,Z Vertex 2 {m}
+  3.79414, -6.315206, 4.408402,           !- X,Y,Z Vertex 3 {m}
+  3.79414, -0.2192058, 7.928684;          !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Zone SE Zone,                           !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim0855,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  12.93814, -6.315206, 4.408402,          !- X,Y,Z Vertex 2 {m}
+  12.93814, -6.315206, 0,                 !- X,Y,Z Vertex 3 {m}
+  12.93814, -0.2192058, 0;                !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1439,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -6.315206, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 2 {m}
+  7.90894, -6.315206, 0.9144,             !- X,Y,Z Vertex 3 {m}
+  7.90894, -6.315206, 2.1336;             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1462,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  7.90894, -6.315206, 0.9144,             !- X,Y,Z Vertex 1 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 2 {m}
+  12.93814, -6.315206, 0,                 !- X,Y,Z Vertex 3 {m}
+  8.823339, -6.315206, 0.9144;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1485,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -6.315206, 4.408402,           !- X,Y,Z Vertex 1 {m}
+  7.90894, -6.315206, 2.1336,             !- X,Y,Z Vertex 2 {m}
+  8.823339, -6.315206, 2.1336,            !- X,Y,Z Vertex 3 {m}
+  12.93814, -6.315206, 4.408402;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1508,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, -6.315206, 4.408402,          !- X,Y,Z Vertex 1 {m}
+  8.823339, -6.315206, 2.1336,            !- X,Y,Z Vertex 2 {m}
+  8.823339, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  12.93814, -6.315206, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1531,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  7.90894, -6.315206, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  7.90894, -6.315206, 0.9144,             !- X,Y,Z Vertex 2 {m}
+  8.823339, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  8.823339, -6.315206, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim1554,                                !- Name
+  Window,                                 !- Surface Type
+  1/8 in Pilkington single glazing,       !- Construction Name
+  aim1531,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  7.90894, -6.315206, 2.1336,             !- X,Y,Z Vertex 1 {m}
+  7.90894, -6.315206, 0.9144,             !- X,Y,Z Vertex 2 {m}
+  8.823339, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  8.823339, -6.315206, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1779,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, -0.2192058, 0,                !- X,Y,Z Vertex 1 {m}
+  12.93814, -6.315206, 0,                 !- X,Y,Z Vertex 2 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 3 {m}
+  3.79414, -0.2192058, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2571 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2571,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  12.93814, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  12.93814, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  8.823339, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  8.823339, -0.2192058, 2.1336,           !- X,Y,Z Vertex 4 {m}
+  7.90894, -0.2192058, 2.1336,            !- X,Y,Z Vertex 5 {m}
+  7.90894, -0.2192058, 0,                 !- X,Y,Z Vertex 6 {m}
+  3.79414, -0.2192058, 0,                 !- X,Y,Z Vertex 7 {m}
+  3.79414, -0.2192058, 7.928684;          !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2599 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2599,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  8.823339, -0.2192058, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  8.823339, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  7.90894, -0.2192058, 0,                 !- X,Y,Z Vertex 3 {m}
+  7.90894, -0.2192058, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2622 Reversed,                       !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2599 Reversed,                       !- Building Surface Name
+  aim2622,                                !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  8.823339, -0.2192058, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  8.823339, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  7.90894, -0.2192058, 0,                 !- X,Y,Z Vertex 3 {m}
+  7.90894, -0.2192058, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2782 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2782,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -0.2192058, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  3.79414, -0.2192058, 0,                 !- X,Y,Z Vertex 2 {m}
+  3.79414, -6.315206, 0,                  !- X,Y,Z Vertex 3 {m}
+  3.79414, -6.315206, 4.408402;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2930,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone SE Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  3.79414, -0.2192058, 7.928684,          !- X,Y,Z Vertex 1 {m}
+  3.79414, -6.315206, 4.408402,           !- X,Y,Z Vertex 2 {m}
+  12.93814, -6.315206, 4.408402,          !- X,Y,Z Vertex 3 {m}
+  12.93814, -0.2192058, 7.928684;         !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Zone SW Zone,                           !- Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  ,                                       !- Type
+  ,                                       !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ;                                       !- Zone Outside Convection Algorithm
+
+BuildingSurface:Detailed,
+  aim1027,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, -6.315206, 4.408402,         !- X,Y,Z Vertex 1 {m}
+  -14.49386, -6.315206, 0,                !- X,Y,Z Vertex 2 {m}
+  -10.37906, -6.315206, 0.9144,           !- X,Y,Z Vertex 3 {m}
+  -10.37906, -6.315206, 2.1336;           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1050,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -10.37906, -6.315206, 0.9144,           !- X,Y,Z Vertex 1 {m}
+  -14.49386, -6.315206, 0,                !- X,Y,Z Vertex 2 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 3 {m}
+  -9.46466, -6.315206, 0.9144;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1073,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, -6.315206, 4.408402,         !- X,Y,Z Vertex 1 {m}
+  -10.37906, -6.315206, 2.1336,           !- X,Y,Z Vertex 2 {m}
+  -9.46466, -6.315206, 2.1336,            !- X,Y,Z Vertex 3 {m}
+  -5.34986, -6.315206, 4.408402;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1096,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -6.315206, 4.408402,          !- X,Y,Z Vertex 1 {m}
+  -9.46466, -6.315206, 2.1336,            !- X,Y,Z Vertex 2 {m}
+  -9.46466, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -5.34986, -6.315206, 0;                 !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1119,                                !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -10.37906, -6.315206, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -10.37906, -6.315206, 0.9144,           !- X,Y,Z Vertex 2 {m}
+  -9.46466, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -9.46466, -6.315206, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim1142,                                !- Name
+  Window,                                 !- Surface Type
+  1/8 in Pilkington single glazing,       !- Construction Name
+  aim1119,                                !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -10.37906, -6.315206, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -10.37906, -6.315206, 0.9144,           !- X,Y,Z Vertex 2 {m}
+  -9.46466, -6.315206, 0.9144,            !- X,Y,Z Vertex 3 {m}
+  -9.46466, -6.315206, 2.1336;            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1742,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Exterior - Brick on CMU,    !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, -0.2192058, 7.928684,        !- X,Y,Z Vertex 1 {m}
+  -14.49386, -0.2192058, 0,               !- X,Y,Z Vertex 2 {m}
+  -14.49386, -6.315206, 0,                !- X,Y,Z Vertex 3 {m}
+  -14.49386, -6.315206, 4.408402;         !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim1964,                                !- Name
+  Floor,                                  !- Surface Type
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -0.2192058, 0,                !- X,Y,Z Vertex 1 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 2 {m}
+  -14.49386, -6.315206, 0,                !- X,Y,Z Vertex 3 {m}
+  -14.49386, -0.2192058, 0;               !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2361 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2361,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  -5.34986, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -9.46466, -0.2192058, 0,                !- X,Y,Z Vertex 3 {m}
+  -9.46466, -0.2192058, 2.1336,           !- X,Y,Z Vertex 4 {m}
+  -10.37906, -0.2192058, 2.1336,          !- X,Y,Z Vertex 5 {m}
+  -10.37906, -0.2192058, 0,               !- X,Y,Z Vertex 6 {m}
+  -14.49386, -0.2192058, 0,               !- X,Y,Z Vertex 7 {m}
+  -14.49386, -0.2192058, 7.928684;        !- X,Y,Z Vertex 8 {m}
+
+BuildingSurface:Detailed,
+  aim2389 Reversed,                       !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2389,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -9.46466, -0.2192058, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -9.46466, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -10.37906, -0.2192058, 0,               !- X,Y,Z Vertex 3 {m}
+  -10.37906, -0.2192058, 2.1336;          !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  aim2412 Reversed,                       !- Name
+  Door,                                   !- Surface Type
+  Metal,                                  !- Construction Name
+  aim2389 Reversed,                       !- Building Surface Name
+  aim2412,                                !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Shading Control Name
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -9.46466, -0.2192058, 2.1336,           !- X,Y,Z Vertex 1 {m}
+  -9.46466, -0.2192058, 0,                !- X,Y,Z Vertex 2 {m}
+  -10.37906, -0.2192058, 0,               !- X,Y,Z Vertex 3 {m}
+  -10.37906, -0.2192058, 2.1336;          !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2744,                                !- Name
+  Wall,                                   !- Surface Type
+  Basic Wall: Interior - 5" Partition (2-hr), !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Surface,                                !- Outside Boundary Condition
+  aim2744 Reversed,                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -5.34986, -0.2192058, 7.928684,         !- X,Y,Z Vertex 1 {m}
+  -5.34986, -6.315206, 4.408402,          !- X,Y,Z Vertex 2 {m}
+  -5.34986, -6.315206, 0,                 !- X,Y,Z Vertex 3 {m}
+  -5.34986, -0.2192058, 0;                !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  aim2856,                                !- Name
+  Roof,                                   !- Surface Type
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Construction Name
+  Zone SW Zone,                           !- Zone Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -14.49386, -0.2192058, 7.928684,        !- X,Y,Z Vertex 1 {m}
+  -14.49386, -6.315206, 4.408402,         !- X,Y,Z Vertex 2 {m}
+  -5.34986, -6.315206, 4.408402,          !- X,Y,Z Vertex 3 {m}
+  -5.34986, -0.2192058, 7.928684;         !- X,Y,Z Vertex 4 {m}
+
+SimulationControl,
+  No,                                     !- Do Zone Sizing Calculation
+  No,                                     !- Do System Sizing Calculation
+  No,                                     !- Do Plant Sizing Calculation
+  Yes,                                    !- Run Simulation for Sizing Periods
+  Yes;                                    !- Run Simulation for Weather File Run Periods
+
+Sizing:Parameters,
+  1.25,                                   !- Heating Sizing Factor
+  1.15;                                   !- Cooling Sizing Factor
+
+RunPeriod,
+  Run Period 1,                           !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  Monday,                                 !- Day of Week for Start Day
+  No,                                     !- Use Weather File Holidays and Special Days
+  No,                                     !- Use Weather File Daylight Saving Period
+  No,                                     !- Apply Weekend Holiday Rule
+  Yes,                                    !- Use Weather File Rain Indicators
+  Yes,                                    !- Use Weather File Snow Indicators
+  1;                                      !- Number of Times Runperiod to be Repeated
+
+GlobalGeometryRules,
+  UpperLeftCorner,                        !- Starting Vertex Position
+  Counterclockwise,                       !- Vertex Entry Direction
+  Relative,                               !- Coordinate System
+  Relative,                               !- Daylighting Reference Point Coordinate System
+  Relative;                               !- Rectangular Surface Coordinate System
+
+Material,
+  1 1/2 in wood,                          !- Name
+  MediumRough,                            !- Roughness
+  0.0376,                                 !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  608,                                    !- Density {kg/m3}
+  1630,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Air: 0.0762 m,                          !- Name
+  MediumRough,                            !- Roughness
+  0.0762,                                 !- Thickness {m}
+  0.025,                                  !- Conductivity {W/m-K}
+  1.2,                                    !- Density {kg/m3}
+  1003.5,                                 !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Asphalt Shingle: 0.00635 m,             !- Name
+  MediumRough,                            !- Roughness
+  0.00635,                                !- Thickness {m}
+  0.5,                                    !- Conductivity {W/m-K}
+  1700,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Brick- Common: 0.092075 m,              !- Name
+  MediumRough,                            !- Roughness
+  0.092075,                               !- Thickness {m}
+  0.54,                                   !- Conductivity {W/m-K}
+  1550,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Concrete Masonry Units: 0.193675 m,     !- Name
+  MediumRough,                            !- Roughness
+  0.193675,                               !- Thickness {m}
+  1.3,                                    !- Conductivity {W/m-K}
+  1800,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Gypsum Wall Board: 0.015875 m,          !- Name
+  MediumRough,                            !- Roughness
+  0.015875,                               !- Thickness {m}
+  0.65,                                   !- Conductivity {W/m-K}
+  1100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Metal Furring: 0.041275 m,              !- Name
+  MediumRough,                            !- Roughness
+  0.041275,                               !- Thickness {m}
+  45,                                     !- Conductivity {W/m-K}
+  7850,                                   !- Density {kg/m3}
+  480,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Metal Stud Layer: 0.0635 m,             !- Name
+  MediumRough,                            !- Roughness
+  0.0635,                                 !- Thickness {m}
+  0.025,                                  !- Conductivity {W/m-K}
+  1.2,                                    !- Density {kg/m3}
+  1003.5,                                 !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Metal surface,                          !- Name
+  MediumRough,                            !- Roughness
+  0.0008,                                 !- Thickness {m}
+  45.28,                                  !- Conductivity {W/m-K}
+  7824,                                   !- Density {kg/m3}
+  500,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Plywood- Sheathing: 0.015875 m,         !- Name
+  MediumRough,                            !- Roughness
+  0.015875,                               !- Thickness {m}
+  0.106,                                  !- Conductivity {W/m-K}
+  552,                                    !- Density {kg/m3}
+  1420,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Plywood- Sheathing: 0.01905 m,          !- Name
+  MediumRough,                            !- Roughness
+  0.01905,                                !- Thickness {m}
+  0.106,                                  !- Conductivity {W/m-K}
+  552,                                    !- Density {kg/m3}
+  1420,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Rigid insulation: 0.0762 m,             !- Name
+  MediumRough,                            !- Roughness
+  0.0762,                                 !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  23,                                     !- Density {kg/m3}
+  1470,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Structure- Wood Joist/Rafter Layer- Batt Insulation: 0.1905 m, !- Name
+  MediumRough,                            !- Roughness
+  0.1905,                                 !- Thickness {m}
+  0.019,                                  !- Conductivity {W/m-K}
+  32,                                     !- Density {kg/m3}
+  920,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  Structure- Wood Joist/Rafter Layer: 0.301625 m, !- Name
+  MediumRough,                            !- Roughness
+  0.301625,                               !- Thickness {m}
+  0.025,                                  !- Conductivity {W/m-K}
+  1.2,                                    !- Density {kg/m3}
+  1003.5,                                 !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+WindowMaterial:SimpleGlazingSystem,
+  {375231ab-0f45-486f-b1e1-e3643399fb9d}, !- Name
+  3.6886,                                 !- U-Factor {W/m2-K}
+  0.86,                                   !- Solar Heat Gain Coefficient
+  0.9;                                    !- Visible Transmittance
+
+Construction,
+  1/8 in Pilkington single glazing,       !- Name
+  {375231ab-0f45-486f-b1e1-e3643399fb9d}; !- Layer 1
+
+Construction,
+  Basic Roof: Wood Rafter 8" - Asphalt Shingle - Insulated, !- Name
+  Asphalt Shingle: 0.00635 m,             !- Layer 1
+  Plywood- Sheathing: 0.015875 m,         !- Layer 2
+  Structure- Wood Joist/Rafter Layer- Batt Insulation: 0.1905 m; !- Layer 3
+
+Construction,
+  Basic Wall: Exterior - Brick on CMU,    !- Name
+  Brick- Common: 0.092075 m,              !- Layer 1
+  Air: 0.0762 m,                          !- Layer 2
+  Rigid insulation: 0.0762 m,             !- Layer 3
+  Concrete Masonry Units: 0.193675 m,     !- Layer 4
+  Metal Furring: 0.041275 m,              !- Layer 5
+  Gypsum Wall Board: 0.015875 m;          !- Layer 6
+
+Construction,
+  Basic Wall: Interior - 5" Partition (2-hr), !- Name
+  Gypsum Wall Board: 0.015875 m,          !- Layer 1
+  Gypsum Wall Board: 0.015875 m,          !- Layer 2
+  Metal Stud Layer: 0.0635 m,             !- Layer 3
+  Gypsum Wall Board: 0.015875 m,          !- Layer 4
+  Gypsum Wall Board: 0.015875 m;          !- Layer 5
+
+Construction,
+  Floor: Wood Truss  Joist 12" - Carpet Finish, !- Name
+  Structure- Wood Joist/Rafter Layer: 0.301625 m, !- Layer 1
+  Plywood- Sheathing: 0.01905 m;          !- Layer 2
+
+Construction,
+  Metal,                                  !- Name
+  Metal surface,                          !- Layer 1
+  1 1/2 in wood,                          !- Layer 2
+  Metal surface;                          !- Layer 3
+
+ScheduleTypeLimits,
+  Fraction,                               !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  ,                                       !- Numeric Type
+  dimensionless;                          !- Unit Type
+
+Schedule:Day:Interval,
+  Common Office Occupancy - 8 AM to 5 PM, !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0,                                      !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.1,                                    !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.2,                                    !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.95,                                   !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.95,                                   !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.45,                                   !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.45,                                   !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.95,                                   !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.95,                                   !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.95,                                   !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.95,                                   !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.95,                                   !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.3,                                    !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.1,                                    !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.1,                                    !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.1,                                    !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0,                                      !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0;                                      !- Value Until Time 24
+
+Schedule:Day:Interval,
+  Office Lighting - 6 AM to 11 PM,        !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0.1,                                    !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.3,                                    !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.9,                                    !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.9,                                    !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.9,                                    !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.9,                                    !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.8,                                    !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.9,                                    !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.9,                                    !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.9,                                    !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.9,                                    !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.5,                                    !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.3,                                    !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.3,                                    !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.2,                                    !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.2,                                    !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0,                                      !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0;                                      !- Value Until Time 24
+
+Schedule:Day:Interval,
+  Retail Facility Occupancy - 7am to 8pm, !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0,                                      !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.1,                                    !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.2,                                    !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.5,                                    !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.5,                                    !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.7,                                    !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.7,                                    !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.7,                                    !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.7,                                    !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.8,                                    !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.7,                                    !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.5,                                    !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.5,                                    !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.3,                                    !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.3,                                    !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0,                                      !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0,                                      !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0;                                      !- Value Until Time 24
+
+Schedule:Day:Interval,
+  Retail Lighting - 7 AM to 8 PM,         !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0,                                      !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.2,                                    !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.5,                                    !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.9,                                    !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.9,                                    !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.9,                                    !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.9,                                    !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.9,                                    !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.9,                                    !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.9,                                    !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.9,                                    !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.9,                                    !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.6,                                    !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.6,                                    !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.5,                                    !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0,                                      !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0,                                      !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0;                                      !- Value Until Time 24
+
+Schedule:Day:Interval,
+  School Lighting - 7 AM to 9 PM,         !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0,                                      !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.3,                                    !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.85,                                   !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.95,                                   !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.95,                                   !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.95,                                   !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.8,                                    !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.8,                                    !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.8,                                    !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.7,                                    !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.5,                                    !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.5,                                    !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.35,                                   !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.35,                                   !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.3,                                    !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.3,                                    !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0,                                      !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0;                                      !- Value Until Time 24
+
+Schedule:Day:Interval,
+  School Occupancy - 8am to 9pm,          !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0,                                      !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.05,                                   !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.75,                                   !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.9,                                    !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.9,                                    !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.8,                                    !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.8,                                    !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.8,                                    !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.8,                                    !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.45,                                   !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.15,                                   !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.05,                                   !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.15,                                   !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.2,                                    !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.2,                                    !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.1,                                    !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0,                                      !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0;                                      !- Value Until Time 24
+
+Schedule:Week:Daily,
+  Common Office Occupancy - 8 AM to 5 PM, !- Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Sunday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Monday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Tuesday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Wednesday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Thursday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Friday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Saturday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Holiday Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- SummerDesignDay Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- WinterDesignDay Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM, !- CustomDay1 Schedule:Day Name
+  Common Office Occupancy - 8 AM to 5 PM; !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  Office Lighting - 6 AM to 11 PM,        !- Name
+  Office Lighting - 6 AM to 11 PM,        !- Sunday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Monday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Tuesday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Wednesday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Thursday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Friday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Saturday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- Holiday Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- SummerDesignDay Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- WinterDesignDay Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM,        !- CustomDay1 Schedule:Day Name
+  Office Lighting - 6 AM to 11 PM;        !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  Retail Facility Occupancy - 7am to 8pm, !- Name
+  Retail Facility Occupancy - 7am to 8pm, !- Sunday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Monday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Tuesday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Wednesday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Thursday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Friday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Saturday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- Holiday Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- SummerDesignDay Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- WinterDesignDay Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm, !- CustomDay1 Schedule:Day Name
+  Retail Facility Occupancy - 7am to 8pm; !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  Retail Lighting - 7 AM to 8 PM,         !- Name
+  Retail Lighting - 7 AM to 8 PM,         !- Sunday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Monday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Tuesday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Wednesday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Thursday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Friday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Saturday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- Holiday Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- SummerDesignDay Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- WinterDesignDay Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM,         !- CustomDay1 Schedule:Day Name
+  Retail Lighting - 7 AM to 8 PM;         !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  School Lighting - 7 AM to 9 PM,         !- Name
+  School Lighting - 7 AM to 9 PM,         !- Sunday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Monday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Tuesday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Wednesday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Thursday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Friday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Saturday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- Holiday Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- SummerDesignDay Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- WinterDesignDay Schedule:Day Name
+  School Lighting - 7 AM to 9 PM,         !- CustomDay1 Schedule:Day Name
+  School Lighting - 7 AM to 9 PM;         !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  School Occupancy - 8am to 9pm,          !- Name
+  School Occupancy - 8am to 9pm,          !- Sunday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Monday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Tuesday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Wednesday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Thursday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Friday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Saturday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- Holiday Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- SummerDesignDay Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- WinterDesignDay Schedule:Day Name
+  School Occupancy - 8am to 9pm,          !- CustomDay1 Schedule:Day Name
+  School Occupancy - 8am to 9pm;          !- CustomDay2 Schedule:Day Name
+
+Schedule:Year,
+  Common Office Occupancy - 8 AM to 5 PM, !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  Common Office Occupancy - 8 AM to 5 PM, !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Year,
+  Office Lighting - 6 AM to 11 PM,        !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  Office Lighting - 6 AM to 11 PM,        !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Year,
+  Retail Facility Occupancy - 7am to 8pm, !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  Retail Facility Occupancy - 7am to 8pm, !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Year,
+  Retail Lighting - 7 AM to 8 PM,         !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  Retail Lighting - 7 AM to 8 PM,         !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Year,
+  School Lighting - 7 AM to 9 PM,         !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  School Lighting - 7 AM to 9 PM,         !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Year,
+  School Occupancy - 8am to 9pm,          !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  School Occupancy - 8am to 9pm,          !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Constant,
+  Always On Discrete,                     !- Name
+  ,                                       !- Schedule Type Limits Name
+  1;                                      !- Hourly Value
+
+Schedule:Constant,
+  Always Off Discrete,                    !- Name
+  ,                                       !- Schedule Type Limits Name
+  0;                                      !- Hourly Value
+
+Schedule:Constant,
+  Always On Continuous,                   !- Name
+  ,                                       !- Schedule Type Limits Name
+  1;                                      !- Hourly Value
+
+OutdoorAir:Node,
+  Model Outdoor Air Node;                 !- Name
+
+OutputControl:Table:Style,
+  HTML;                                   !- Column Separator
+
+Output:Table:SummaryReports,
+  AllSummary;                             !- Report Name 1
+
+Output:VariableDictionary,
+  IDF,                                    !- Key Field
+  Unsorted;                               !- Sort Option
+
+Output:SQLite,
+  SimpleAndTabular;                       !- Option Type
+
+LifeCycleCost:NonrecurringCost,
+  Default Cost,                           !- Name
+  Construction,                           !- Category
+  0,                                      !- Cost
+  ServicePeriod;                          !- Start of Costs
+
